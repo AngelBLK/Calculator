@@ -38,7 +38,7 @@ body {
     height: auto;
     padding: 30px;
     background-color: var(--bg-calculator);
-    box-shadow: var(--shadow-calculator);
+    box-shadow: -10px -10px 8px rgba(255,255,255,0.1), 10px 10px 8px rgba(23,33,48,.4);;
     border-radius: 30px;
 }
 .container-btn{
