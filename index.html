@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <script src="Display.js" ></script>
-  <script src="Calculator.js" ></script>
-  <script src="index.js" ></script>
+  <link rel="stylesheet" href="./styles/style.css">
+  <script src="./modules/Display.js" type="text/javascript"></script>
+  <script src="./modules/Calculator.js" type="text/javascript"></script>
+  <script src="./modules/index.js" type="text/javascript" defer></script>
   <title>Calculator</title>
 </head>
 <body>
@@ -15,7 +15,7 @@
     <div class="calculator">
       <div class="user">
         <img src="assets/user.png" alt="">
-        <p id="name-user"></p>
+        <p>Hello<span id="name-user"></span></p>
       </div>
       <div class="display">
         <div class="before-value" id="before-value"></div>
@@ -23,10 +23,10 @@
       </div>
       <div class="container-btn">
         <button class="btn clear-all" onclick="display.borrarTodo()" >AC</button>
-      <button class="btn clear">
+      <button class="btn clear c-blue" onclick="display.borrar()">
         <img src="assets/delete.png" alt="">
       </button>
-      <button class="btn operator divide" value="divi">÷</button>
+      <button class="btn operator divide" value="dividir">÷</button>
       <button class="btn number siete">7</button>
       <button class="btn number ocho">8</button>
       <button class="btn number nueve">9</button>
@@ -40,7 +40,7 @@
       <button class="btn number tres">3</button>
       <button class="btn operator add" value="sumar">+</button>
       <button class="btn number cero">0</button>
-      <button class="btn number color">.</button>
+      <button class="btn number point c-blue">.</button>
       <button class="btn operator equal" value="igual">=</button>
       </div>
     </div>
