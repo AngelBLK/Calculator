@@ -5,6 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/theme-dark.css">
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
   <script src="./modules/Display.js" type="text/javascript"></script>
   <script src="./modules/Calculator.js" type="text/javascript"></script>
   <script src="./modules/index.js" type="text/javascript" defer></script>
@@ -12,11 +14,19 @@
 </head>
 <body>
   <div class="container">
-    <div class="calculator">
-      <div class="user">
-        <img src="assets/user.png" alt="">
-        <p>Hello<span id="name-user"></span></p>
+    <div class="calculator" id="page">
+      <div class="header-calculator">
+        <div class="user">
+          <img src="assets/chatbot.png" alt="" class="user-icon">
+          <p>Hello<span id="name-user"></span></p>
+        </div>
+
+        <button class="btn-theme active" id="btn-theme">
+          <span></span>
+          <span></span>
+        </button>
       </div>
+      
       <div class="display">
         <div class="before-value" id="before-value"></div>
         <div class="actual-value" id="actual-value"></div>
@@ -46,6 +56,6 @@
     </div>
   </div>
   
-  
+  <script src="./modules/theme.js"></script>
 </body>
 </html>

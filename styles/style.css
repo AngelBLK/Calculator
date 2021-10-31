@@ -33,6 +33,12 @@ body {
     place-items: center;
 }
 
+.header-calculator{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .user {
     display: flex;
     align-items: center;
@@ -42,8 +48,10 @@ body {
     color: var(--white);
 }
 
-.user img {
-    margin: 14px;
+.user-icon{
+    width: 30px;
+    height: 30px;
+    margin: 0 14px 0 0;
     cursor: pointer;
 }
 
