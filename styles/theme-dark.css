@@ -1,0 +1,85 @@
+:root{
+   --bg-btnNumber: rgb(135, 167, 217);
+   --bg-btnOperator: rgb(11, 163, 238);
+   --bg-btnClearAll: rgb(120, 190, 225);
+   --bg-calculatorLight: rgb(135, 167, 217);
+   --shadow-dark: rgb(107, 134, 175);
+   --shadow-light: rgba(255, 255, 255, 0.08);
+}
+
+.btn-theme{
+   background-color: var(--bg-btnNumber);
+   position: relative;
+   box-shadow: -3px -3px 3px rgba(255, 255, 255, 0.103), 3px 3px 3px var(--shadow-dark);
+   cursor: pointer;
+   outline: none;
+   border: none;
+   border-radius: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transition: 0.5s all;
+   color: var(--white);
+}
+
+.btn-theme span{
+   width: 25px;
+   height: 20px;
+   line-height: 20px;
+   font-size: 12px;
+   display: block;
+   background: none;
+}
+
+.btn-theme::after{
+   display: block;
+   content: "";
+   background-color: var(--bg-btnOperator);
+   box-shadow: -3px -3px 3px rgba(151, 151, 151, 0.08), 3px 3px 3px rgba(12, 19, 31, 0.4);
+   border: none;
+   width: 13px;
+   height: 13px;
+   position: absolute;
+   left: 3px;
+   right: unset;
+   border-radius: 50%;
+   transition: 0.5s all;
+}
+
+.btn-theme.active{
+   background: var(--bg-calculator);
+   box-shadow: -3px -3px 3px rgba(151, 151, 151, 0.08), 3px 3px 3px rgba(12, 19, 31, 0.4);
+}
+
+.btn-theme.active::after{
+   background-color: var(--light-blue);
+   box-shadow: -3px -3px 3px rgba(151, 151, 151, 0.08), 3px 3px 3px rgba(12, 19, 31, 0.04);
+   left: unset;
+   right: 3.5px;
+}
+
+.calculator.light{
+   background: var(--bg-calculatorLight);
+}
+
+.display.light{
+   background-color: var(--bg-calculatorLight);
+   box-shadow: inset -4px -4px 8px rgba(255,255,255,0.21), inset 4px 4px 8px rgba(23, 33, 48, 0.281);
+}
+
+.number.light{
+   background-color: var(--bg-btnNumber);
+   box-shadow: -3px -3px 3px var(--shadow-light), 3px 3px 3px var(--shadow-dark);
+}
+
+.point.light,
+.operator.light,
+.c-blue.light{
+   background-color: var(--bg-btnOperator);
+   box-shadow: -3px -3px 3px var(--shadow-light), 3px 3px 3px var(--shadow-dark);
+}
+
+.clear-all.light{
+   background-color: var(--bg-btnClearAll);
+   box-shadow: -3px -3px 3px var(--shadow-light), 3px 3px 3px var(--shadow-dark);
+}
