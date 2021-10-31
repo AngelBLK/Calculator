@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+:root {
+  --white:#ffffff;
+  --bg-main:#5A6779;
+  --blue:#3071E7;
+  --light-blue: #719DEB;
+  --bg-calculator:#263142;
+
+  --bg-btnNumber: rgb(135, 167, 217);
+  --bg-btnOperator: rgb(11, 163, 238);
+  --bg-btnClearAll: rgb(120, 190, 225);
+  --bg-calculatorLight: rgb(135, 167, 217);
+  --shadow-dark: rgb(107, 134, 175);
+  --shadow-light: rgba(255, 255, 255, 0.08);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(../assets/bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

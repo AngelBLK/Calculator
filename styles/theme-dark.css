@@ -1,12 +1,4 @@
-:root{
-   --bg-btnNumber: rgb(135, 167, 217);
-   --bg-btnOperator: rgb(11, 163, 238);
-   --bg-btnClearAll: rgb(120, 190, 225);
-   --bg-calculatorLight: rgb(135, 167, 217);
-   --shadow-dark: rgb(107, 134, 175);
-   --shadow-light: rgba(255, 255, 255, 0.08);
-}
-
+@import url(index.css) all;
 .btn-theme{
    background-color: var(--bg-btnNumber);
    position: relative;
