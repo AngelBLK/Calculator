@@ -3,7 +3,8 @@ const bgCalculator = document.getElementById("page");
 const bgDisplay = document.querySelector(".display");
 const bgBtn = document.querySelectorAll(".btn");
 
-themeBtn.addEventListener('click', () => {
+themeBtn.addEventListener('click', () => {   
+
    bgCalculator.classList.toggle('light');
    bgDisplay.classList.toggle('light');
    bgBtn.forEach(bgBtn => {
