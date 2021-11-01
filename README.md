@@ -9,7 +9,7 @@ School projects of the web programming class, where events, functions, use of va
 * JavaScrip - Project Functionality.
 
 # Autores ✒️
-Este proyecto se construyó gracias a:
+This project was build thanks to:
 
 Arredondo Flores Alexa Ketzali - Design and Theme functionality - [KetzaliF](https://github.com/KetzaliF).
 Bohorquez López Miguel Angel - Code - [AngelBLK](https://github.com/AngelBLK).
