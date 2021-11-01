@@ -1,6 +1,10 @@
-const d = document;
-const user = d.querySelector('.user');
-const paragraph = d.getElementById('name-user');
+const user = document.querySelector('.user');
+const paragraph = document.getElementById('name-user');
+
+const displayValorAnterior = document.getElementById('before-value');
+const displayValorActual = document.getElementById('actual-value');
+const botonesNumeros = document.querySelectorAll('.number');
+const botonesOperadores = document.querySelectorAll('.operator');
 
 user.addEventListener('click', (e) => {
     if (e.target && e.target.tagName === 'IMG') {
@@ -9,11 +13,6 @@ user.addEventListener('click', (e) => {
         paragraph.innerHTML = ` ${name} ${lastName}!`
     }
 })
-
-const displayValorAnterior = document.getElementById('before-value');
-const displayValorActual = document.getElementById('actual-value');
-const botonesNumeros = document.querySelectorAll('.number');
-const botonesOperadores = document.querySelectorAll('.operator');
 
 const display = new Display(displayValorAnterior, displayValorActual);
 
