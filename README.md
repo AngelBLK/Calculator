@@ -22,4 +22,4 @@ You can visit de project wit this link:
 
 ## Licencia 📄
 
-This project is under the License (MIT) - look at the file [LICENSE.md](https://github.com/AngelBLK/Calculator/blob/main/LICENSE) for detail.
+This project is under the License (MIT) - look at the file <a href="https://github.com/AngelBLK/Calculator/blob/main/LICENSE" target="_blank">LICENSE.md</a> for detail.
